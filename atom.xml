@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>HiYong</title>
+  <icon>https://hiyongz.github.io/icon.png</icon>
+  <subtitle>此时 此地 此身</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://hiyongz.github.io/"/>
+  <updated>2023-08-13T23:43:43.951Z</updated>
+  <id>https://hiyongz.github.io/</id>
+  
+  <author>
+    <name>HiYo</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Windows远程执行进程工具psexec和wmiexec介绍</title>
+    <link href="https://hiyongz.github.io/posts/windows-lateral-movement-tool-psexec-and-wmiexec/"/>
+    <id>https://hiyongz.github.io/posts/windows-lateral-movement-tool-psexec-and-wmiexec/</id>
+    <published>2023-05-21T12:12:00.000Z</published>
+    <updated>2023-08-13T23:43:43.951Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在自动化测试或者自动化工具开发中，通常需要向其它电脑或者服务器发送指令，比如Windows发送命令到Linux服务器开启某个服务进程，或者读取状态信息，我们可以使用ssh协议实现。&lt;/p&gt;
+&lt;p&gt;如果Windows主机需要发送命令到局域网内的其它Windows电脑要如何实现呢？在网络安全中称为横向移动的内网渗透方法可实现远程执行命令，横向移动工具有很多，本文介绍psexec和wmiexec这两个工具如何实现远程执行进程。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="软件工具" scheme="https://hiyongz.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="PsExec" scheme="https://hiyongz.github.io/tags/PsExec/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>代码评审平台Gerrit安装配置方法介绍(Ubuntu)</title>
+    <link href="https://hiyongz.github.io/posts/devtest-notes-for-gerrit-install-in-ubuntu/"/>
+    <id>https://hiyongz.github.io/posts/devtest-notes-for-gerrit-install-in-ubuntu/</id>
+    <published>2023-04-27T12:12:00.000Z</published>
+    <updated>2023-08-13T23:43:43.763Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Gerrit是一款开源免费的基于 web 的代码审查工具，是基于 Git 的版本控制系统。在代码入库之前对开发人员的提交进行审阅，检视通过的代码才能提交入库。本文记录如何安装部署gerrit平台。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="测试开发" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/"/>
+    
+      <category term="Gerrit" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/Gerrit/"/>
+    
+    
+      <category term="Gerrit" scheme="https://hiyongz.github.io/tags/Gerrit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>代码评审平台Gerrit安装配置方法介绍</title>
+    <link href="https://hiyongz.github.io/posts/devtest-notes-for-gerrit-install/"/>
+    <id>https://hiyongz.github.io/posts/devtest-notes-for-gerrit-install/</id>
+    <published>2023-04-27T12:12:00.000Z</published>
+    <updated>2023-08-13T23:43:43.771Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Gerrit是一款开源免费的基于 web 的代码审查工具，是基于 Git 的版本控制系统。在代码入库之前对开发人员的提交进行审阅，检视通过的代码才能提交入库。本文记录如何安装部署gerrit平台。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="测试开发" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/"/>
+    
+      <category term="Gerrit" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/Gerrit/"/>
+    
+    
+      <category term="Gerrit" scheme="https://hiyongz.github.io/tags/Gerrit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>性能测试工具 IxChariot：Tcl脚本调用方法介绍</title>
+    <link href="https://hiyongz.github.io/posts/performance-testing-with-ixchariot/"/>
+    <id>https://hiyongz.github.io/posts/performance-testing-with-ixchariot/</id>
+    <published>2023-04-05T12:12:00.000Z</published>
+    <updated>2023-08-13T23:43:43.843Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;ixChariot是一款功能强大的性能测试软件，可用来测试有线和无线性能，可以模拟真实应用程序流量，并提供关键性能指标，包括吞吐量、丢包、抖动、延迟、MOS等。本文简单介绍如何使用IxChariot Tcl API来实现自动化跑流。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="自动化测试" scheme="https://hiyongz.github.io/categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="性能测试" scheme="https://hiyongz.github.io/categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="IxChariot" scheme="https://hiyongz.github.io/tags/IxChariot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python中 os.popen、os.system和subprocess.popen方法介绍</title>
+    <link href="https://hiyongz.github.io/posts/python-notes-for-subprocess/"/>
+    <id>https://hiyongz.github.io/posts/python-notes-for-subprocess/</id>
+    <published>2023-03-26T12:12:00.000Z</published>
+    <updated>2023-08-13T23:43:43.871Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Python 提供了多种与操作系统交互的方法，比如os模块中的popen和system方法，此外，Python subprocess模块中的Popen类也提供了与操作系统交互的方法，使用起来更加灵活，本文将简单介绍这几种方法。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="编程语言" scheme="https://hiyongz.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="python" scheme="https://hiyongz.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/"/>
+    
+    
+      <category term="Python" scheme="https://hiyongz.github.io/tags/Python/"/>
+    
+      <category term="日志" scheme="https://hiyongz.github.io/tags/%E6%97%A5%E5%BF%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python日志系统logging使用介绍</title>
+    <link href="https://hiyongz.github.io/posts/python-notes-for-logging/"/>
+    <id>https://hiyongz.github.io/posts/python-notes-for-logging/</id>
+    <published>2023-03-20T12:12:00.000Z</published>
+    <updated>2023-08-13T23:43:43.867Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;日志记录对于软件开发调试和运行都非常重要。Python标准库提供了一个日志记录系统，可以很方便的在python项目中添加日志记录。本文将详细介绍如何使用python的 &lt;code&gt;logging&lt;/code&gt; 模块来记录日志。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="编程语言" scheme="https://hiyongz.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="python" scheme="https://hiyongz.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/"/>
+    
+    
+      <category term="Python" scheme="https://hiyongz.github.io/tags/Python/"/>
+    
+      <category term="日志" scheme="https://hiyongz.github.io/tags/%E6%97%A5%E5%BF%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SVN项目迁移到Git方法</title>
+    <link href="https://hiyongz.github.io/posts/version-management-notes-migrate-from-svn-to-git/"/>
+    <id>https://hiyongz.github.io/posts/version-management-notes-migrate-from-svn-to-git/</id>
+    <published>2023-03-02T00:00:00.000Z</published>
+    <updated>2023-08-13T23:43:43.943Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文记录如何将SVN项目迁移到Git，并保留提交日志信息。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="版本管理" scheme="https://hiyongz.github.io/categories/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
+    
+    
+      <category term="git" scheme="https://hiyongz.github.io/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git merge 和 git rebase 的区别</title>
+    <link href="https://hiyongz.github.io/posts/version-management-notes-for-git-merge-and-git-rebase/"/>
+    <id>https://hiyongz.github.io/posts/version-management-notes-for-git-merge-and-git-rebase/</id>
+    <published>2023-02-15T12:16:00.000Z</published>
+    <updated>2023-08-13T23:43:43.939Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Git版本控制中，&lt;code&gt;git rebase&lt;/code&gt; 和 &lt;code&gt;git merge&lt;/code&gt; 这两个命令都可以用来集成从一个分支和另一个分支的更改。它们是两种不同的合并方法，本文将介绍它们的差异。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="版本管理" scheme="https://hiyongz.github.io/categories/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
+    
+    
+      <category term="git" scheme="https://hiyongz.github.io/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>禅道二次开发技巧</title>
+    <link href="https://hiyongz.github.io/posts/devtest-notes-for-zentao-extension-skills/"/>
+    <id>https://hiyongz.github.io/posts/devtest-notes-for-zentao-extension-skills/</id>
+    <published>2023-02-15T12:12:00.000Z</published>
+    <updated>2023-08-13T23:43:43.779Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文记录一些进行禅道二次开发的技巧。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="测试开发" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/"/>
+    
+      <category term="禅道" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/%E7%A6%85%E9%81%93/"/>
+    
+    
+      <category term="zentao" scheme="https://hiyongz.github.io/tags/zentao/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用Jmeter抓取手机APP报文并进行APP接口测试</title>
+    <link href="https://hiyongz.github.io/posts/api-test-guide-for-mobile-app-with-jmeter/"/>
+    <id>https://hiyongz.github.io/posts/api-test-guide-for-mobile-app-with-jmeter/</id>
+    <published>2023-02-08T12:02:00.000Z</published>
+    <updated>2023-08-13T23:43:43.599Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Jmeter是一个比较常用的接口测试工具，尤其是接口性能测试。当然它也可以用来测试手机APP的HTTP接口，我在&lt;a href=&quot;https://blog.csdn.net/u010698107/article/details/128524164&quot;&gt;Fiddler抓取手机APP报文&lt;/a&gt; 和 &lt;a href=&quot;https://blog.csdn.net/u010698107/article/details/112728913&quot;&gt;接口测试代理工具charles mock测试&lt;/a&gt; 分别介绍了Fiddler和charles 如何抓取APP报文，本文介绍使用Jmeter来抓取APP报文以及进行手机APP接口测试。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="自动化测试" scheme="https://hiyongz.github.io/categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="接口测试" scheme="https://hiyongz.github.io/categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="接口测试" scheme="https://hiyongz.github.io/tags/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="代理工具" scheme="https://hiyongz.github.io/tags/%E4%BB%A3%E7%90%86%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="Jmeter" scheme="https://hiyongz.github.io/tags/Jmeter/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>持续集成：使用Jenkins API创建视图</title>
+    <link href="https://hiyongz.github.io/posts/continuous-integration-for-jenkins-api-create-view/"/>
+    <id>https://hiyongz.github.io/posts/continuous-integration-for-jenkins-api-create-view/</id>
+    <published>2023-01-12T12:12:00.000Z</published>
+    <updated>2023-08-13T23:43:43.699Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/u010698107/article/details/126923744&quot;&gt;持续集成：通过Jenkins API创建项目和节点&lt;/a&gt;介绍了使用jenkins API来创建项目和新建节点，jenkins
+        
+      
+    
+    </summary>
+    
+    
+      <category term="测试开发" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/"/>
+    
+      <category term="持续集成" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/"/>
+    
+    
+      <category term="Jenkins" scheme="https://hiyongz.github.io/tags/Jenkins/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用Fiddler抓取手机APP报文</title>
+    <link href="https://hiyongz.github.io/posts/api-test-guide-for-mobile-app-with-fiddler/"/>
+    <id>https://hiyongz.github.io/posts/api-test-guide-for-mobile-app-with-fiddler/</id>
+    <published>2023-01-05T12:02:00.000Z</published>
+    <updated>2023-08-13T23:43:43.595Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Http协议代理工具有很多，比如Burp Suite、Charles、Jmeter、Fiddler等，它们都可以用来抓取APP报文，其中charles和Burp Suite是收费的，Jmeter主要用来做接口测试，而Fiddler提供了免费版，本文记录一下在Windows系统中如何用Fiddler代理工具抓取手机APP报文。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="自动化测试" scheme="https://hiyongz.github.io/categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="接口测试" scheme="https://hiyongz.github.io/categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="接口测试" scheme="https://hiyongz.github.io/tags/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="代理工具 - Fiddler" scheme="https://hiyongz.github.io/tags/%E4%BB%A3%E7%90%86%E5%B7%A5%E5%85%B7-Fiddler/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android APP稳定性测试工具Fastbot</title>
+    <link href="https://hiyongz.github.io/posts/app-testing-tools-for-fastbot-android/"/>
+    <id>https://hiyongz.github.io/posts/app-testing-tools-for-fastbot-android/</id>
+    <published>2022-10-16T12:12:00.000Z</published>
+    <updated>2023-08-13T23:43:43.651Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我在 &lt;a href=&quot;https://blog.csdn.net/u010698107/article/details/111437735&quot;&gt;自动遍历测试之Monkey工具&lt;/a&gt; 和 &lt;a href=&quot;https://blog.csdn.net/u010698107/article/details/111438820&quot;&gt;AppCrawler自动遍历测试&lt;/a&gt; 分别介绍了APP稳定性测试工具monkey和AppCrawler，它们各有优缺点，本文介绍另一款也比较好用的稳定性测试工具Fastbot。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="自动化测试" scheme="https://hiyongz.github.io/categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="App自动化测试" scheme="https://hiyongz.github.io/categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/App%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="Fastbot" scheme="https://hiyongz.github.io/tags/Fastbot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Maven 安装和配置方法详解</title>
+    <link href="https://hiyongz.github.io/posts/java-maven-install-and-configure/"/>
+    <id>https://hiyongz.github.io/posts/java-maven-install-and-configure/</id>
+    <published>2022-10-14T12:12:00.000Z</published>
+    <updated>2023-08-13T23:43:43.791Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;通常一个Java项目会引用大量的 jar 包，而jar 包之间可能存在各种依赖关系，如果运行Java项目时仅使用classpath 参数来管理jar包会非常不方便，此外，在项目编译、打包、升级、发布都会非常繁琐。Maven就是一个可以用来管理jar包的工具，可以用它来构建和管理任何基于java的项目，比如代码编译、打包、项目模块化管理、依赖管理等，下面来介绍Maven的安装及配置方法。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="编程语言" scheme="https://hiyongz.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="java" scheme="https://hiyongz.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/"/>
+    
+    
+      <category term="Java" scheme="https://hiyongz.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>持续集成：通过Jenkins API创建项目和节点</title>
+    <link href="https://hiyongz.github.io/posts/continuous-integration-for-jenkins-api-create-job-and-slave/"/>
+    <id>https://hiyongz.github.io/posts/continuous-integration-for-jenkins-api-create-job-and-slave/</id>
+    <published>2022-09-28T12:16:00.000Z</published>
+    <updated>2023-08-13T23:43:43.695Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我在&lt;a href=&quot;https://blog.csdn.net/u010698107/article/details/123036572&quot;&gt;持续集成：Jenkins API使用方法详细介绍&lt;/a&gt;中介绍了jenkins API的使用方法，比如使用API读取jenkins项目相关信息、触发构建等操作，除此之外，还可以直接使用API来创建项目、新建节点。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="自动化测试" scheme="https://hiyongz.github.io/categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="测试开发" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/"/>
+    
+      <category term="持续集成" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/"/>
+    
+    
+      <category term="Jenkins" scheme="https://hiyongz.github.io/tags/Jenkins/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>持续集成平台Jenkins：docker镜像升级</title>
+    <link href="https://hiyongz.github.io/posts/continuous-integration-for-jenkins-docker-images-upgrade/"/>
+    <id>https://hiyongz.github.io/posts/continuous-integration-for-jenkins-docker-images-upgrade/</id>
+    <published>2022-09-21T12:12:00.000Z</published>
+    <updated>2023-08-13T23:43:43.699Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Jenkins 2.357 及 LTS 2.361.1之后的版本要求Java 11 或者 17，如果使用的是Java 8，要升级最新版本的Jenkins，就需要升级Java JDK版本，本文记录一下如何升级jenkins容器的Java版本。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="自动化测试" scheme="https://hiyongz.github.io/categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="测试开发" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/"/>
+    
+      <category term="持续集成" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/"/>
+    
+    
+      <category term="Jenkins" scheme="https://hiyongz.github.io/tags/Jenkins/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL索引介绍</title>
+    <link href="https://hiyongz.github.io/posts/database-for-mysql-index/"/>
+    <id>https://hiyongz.github.io/posts/database-for-mysql-index/</id>
+    <published>2022-09-07T12:12:00.000Z</published>
+    <updated>2023-08-13T23:43:43.747Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;索引主要是用来提高数据库的查询效率的，它对指定的列或列的集合生成索引，然后可以通过索引来检索目标数据，就像目录一样，缩小了扫描范围，大大提高了查询效率。&lt;/p&gt;
+&lt;p&gt;如果不使用索引，MySQL服务器会从第一行开始查询，直到找到相关行，数据表越大，耗费时间就越多。本文将介绍索引的一些基本原理，了解它是如何优化数据库性能的。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="测试开发" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/"/>
+    
+      <category term="数据库" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="MySQL" scheme="https://hiyongz.github.io/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java环境安装配置步骤介绍</title>
+    <link href="https://hiyongz.github.io/posts/java-install-on-windows-and-centos7/"/>
+    <id>https://hiyongz.github.io/posts/java-install-on-windows-and-centos7/</id>
+    <published>2022-09-04T12:02:00.000Z</published>
+    <updated>2023-08-13T23:43:43.791Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文记录Windows环境和Linux环境(centos7)安装Java以及Linux环境升级Java JDK版本的步骤。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="编程语言" scheme="https://hiyongz.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="java" scheme="https://hiyongz.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/"/>
+    
+    
+      <category term="java" scheme="https://hiyongz.github.io/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL锁：全局锁、表级锁和行锁</title>
+    <link href="https://hiyongz.github.io/posts/database-for-mysql-lock/"/>
+    <id>https://hiyongz.github.io/posts/database-for-mysql-lock/</id>
+    <published>2022-08-25T12:12:00.000Z</published>
+    <updated>2023-08-13T23:43:43.755Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;事务的实现离不开MySQL数据库的锁机制，设计锁的目的也是为了处理并发访问问题，本文简单介绍MySQL 里面的全局锁、表级锁和行锁三类锁。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="测试开发" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/"/>
+    
+      <category term="数据库" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="MySQL" scheme="https://hiyongz.github.io/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL事务：事务隔离</title>
+    <link href="https://hiyongz.github.io/posts/database-for-mysql-transaction-isolation/"/>
+    <id>https://hiyongz.github.io/posts/database-for-mysql-transaction-isolation/</id>
+    <published>2022-08-23T12:12:00.000Z</published>
+    <updated>2023-08-13T23:43:43.759Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;对数据进行并发操作时，事务可以确保数据的完整性，在银行、证券交易等业务场景需要用到它，本文将介绍MySQL事务是如何保证数据的一致性的。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="测试开发" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/"/>
+    
+      <category term="数据库" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="MySQL" scheme="https://hiyongz.github.io/tags/MySQL/"/>
+    
+  </entry>
+  
+</feed>

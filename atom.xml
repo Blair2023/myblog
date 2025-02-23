@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>HiYong</title>
-  <icon>https://hiyongz.github.io/icon.png</icon>
+  <icon>icon.png</icon>
   <subtitle>此时 此地 此身</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://hiyongz.github.io/"/>
+  <link href=""/>
   <updated>2023-08-13T23:43:43.951Z</updated>
-  <id>https://hiyongz.github.io/</id>
+  <id></id>
   
   <author>
     <name>HiYo</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Windows远程执行进程工具psexec和wmiexec介绍</title>
-    <link href="https://hiyongz.github.io/posts/windows-lateral-movement-tool-psexec-and-wmiexec/"/>
-    <id>https://hiyongz.github.io/posts/windows-lateral-movement-tool-psexec-and-wmiexec/</id>
+    <link href="posts/windows-lateral-movement-tool-psexec-and-wmiexec/"/>
+    <id>posts/windows-lateral-movement-tool-psexec-and-wmiexec/</id>
     <published>2023-05-21T12:12:00.000Z</published>
     <updated>2023-08-13T23:43:43.951Z</updated>
     
@@ -31,17 +31,17 @@
     </summary>
     
     
-      <category term="软件工具" scheme="https://hiyongz.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"/>
+      <category term="软件工具" scheme="categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="PsExec" scheme="https://hiyongz.github.io/tags/PsExec/"/>
+      <category term="PsExec" scheme="tags/PsExec/"/>
     
   </entry>
   
   <entry>
     <title>代码评审平台Gerrit安装配置方法介绍(Ubuntu)</title>
-    <link href="https://hiyongz.github.io/posts/devtest-notes-for-gerrit-install-in-ubuntu/"/>
-    <id>https://hiyongz.github.io/posts/devtest-notes-for-gerrit-install-in-ubuntu/</id>
+    <link href="posts/devtest-notes-for-gerrit-install-in-ubuntu/"/>
+    <id>posts/devtest-notes-for-gerrit-install-in-ubuntu/</id>
     <published>2023-04-27T12:12:00.000Z</published>
     <updated>2023-08-13T23:43:43.763Z</updated>
     
@@ -52,19 +52,19 @@
     </summary>
     
     
-      <category term="测试开发" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/"/>
+      <category term="测试开发" scheme="categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/"/>
     
-      <category term="Gerrit" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/Gerrit/"/>
+      <category term="Gerrit" scheme="categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/Gerrit/"/>
     
     
-      <category term="Gerrit" scheme="https://hiyongz.github.io/tags/Gerrit/"/>
+      <category term="Gerrit" scheme="tags/Gerrit/"/>
     
   </entry>
   
   <entry>
     <title>代码评审平台Gerrit安装配置方法介绍</title>
-    <link href="https://hiyongz.github.io/posts/devtest-notes-for-gerrit-install/"/>
-    <id>https://hiyongz.github.io/posts/devtest-notes-for-gerrit-install/</id>
+    <link href="posts/devtest-notes-for-gerrit-install/"/>
+    <id>posts/devtest-notes-for-gerrit-install/</id>
     <published>2023-04-27T12:12:00.000Z</published>
     <updated>2023-08-13T23:43:43.771Z</updated>
     
@@ -75,19 +75,19 @@
     </summary>
     
     
-      <category term="测试开发" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/"/>
+      <category term="测试开发" scheme="categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/"/>
     
-      <category term="Gerrit" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/Gerrit/"/>
+      <category term="Gerrit" scheme="categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/Gerrit/"/>
     
     
-      <category term="Gerrit" scheme="https://hiyongz.github.io/tags/Gerrit/"/>
+      <category term="Gerrit" scheme="tags/Gerrit/"/>
     
   </entry>
   
   <entry>
     <title>性能测试工具 IxChariot：Tcl脚本调用方法介绍</title>
-    <link href="https://hiyongz.github.io/posts/performance-testing-with-ixchariot/"/>
-    <id>https://hiyongz.github.io/posts/performance-testing-with-ixchariot/</id>
+    <link href="posts/performance-testing-with-ixchariot/"/>
+    <id>posts/performance-testing-with-ixchariot/</id>
     <published>2023-04-05T12:12:00.000Z</published>
     <updated>2023-08-13T23:43:43.843Z</updated>
     
@@ -98,19 +98,19 @@
     </summary>
     
     
-      <category term="自动化测试" scheme="https://hiyongz.github.io/categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
+      <category term="自动化测试" scheme="categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
     
-      <category term="性能测试" scheme="https://hiyongz.github.io/categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/"/>
+      <category term="性能测试" scheme="categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/"/>
     
     
-      <category term="IxChariot" scheme="https://hiyongz.github.io/tags/IxChariot/"/>
+      <category term="IxChariot" scheme="tags/IxChariot/"/>
     
   </entry>
   
   <entry>
     <title>Python中 os.popen、os.system和subprocess.popen方法介绍</title>
-    <link href="https://hiyongz.github.io/posts/python-notes-for-subprocess/"/>
-    <id>https://hiyongz.github.io/posts/python-notes-for-subprocess/</id>
+    <link href="posts/python-notes-for-subprocess/"/>
+    <id>posts/python-notes-for-subprocess/</id>
     <published>2023-03-26T12:12:00.000Z</published>
     <updated>2023-08-13T23:43:43.871Z</updated>
     
@@ -121,21 +121,21 @@
     </summary>
     
     
-      <category term="编程语言" scheme="https://hiyongz.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+      <category term="编程语言" scheme="categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
     
-      <category term="python" scheme="https://hiyongz.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/"/>
+      <category term="python" scheme="categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/"/>
     
     
-      <category term="Python" scheme="https://hiyongz.github.io/tags/Python/"/>
+      <category term="Python" scheme="tags/Python/"/>
     
-      <category term="日志" scheme="https://hiyongz.github.io/tags/%E6%97%A5%E5%BF%97/"/>
+      <category term="日志" scheme="tags/%E6%97%A5%E5%BF%97/"/>
     
   </entry>
   
   <entry>
     <title>Python日志系统logging使用介绍</title>
-    <link href="https://hiyongz.github.io/posts/python-notes-for-logging/"/>
-    <id>https://hiyongz.github.io/posts/python-notes-for-logging/</id>
+    <link href="posts/python-notes-for-logging/"/>
+    <id>posts/python-notes-for-logging/</id>
     <published>2023-03-20T12:12:00.000Z</published>
     <updated>2023-08-13T23:43:43.867Z</updated>
     
@@ -146,21 +146,21 @@
     </summary>
     
     
-      <category term="编程语言" scheme="https://hiyongz.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+      <category term="编程语言" scheme="categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
     
-      <category term="python" scheme="https://hiyongz.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/"/>
+      <category term="python" scheme="categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/"/>
     
     
-      <category term="Python" scheme="https://hiyongz.github.io/tags/Python/"/>
+      <category term="Python" scheme="tags/Python/"/>
     
-      <category term="日志" scheme="https://hiyongz.github.io/tags/%E6%97%A5%E5%BF%97/"/>
+      <category term="日志" scheme="tags/%E6%97%A5%E5%BF%97/"/>
     
   </entry>
   
   <entry>
     <title>SVN项目迁移到Git方法</title>
-    <link href="https://hiyongz.github.io/posts/version-management-notes-migrate-from-svn-to-git/"/>
-    <id>https://hiyongz.github.io/posts/version-management-notes-migrate-from-svn-to-git/</id>
+    <link href="posts/version-management-notes-migrate-from-svn-to-git/"/>
+    <id>posts/version-management-notes-migrate-from-svn-to-git/</id>
     <published>2023-03-02T00:00:00.000Z</published>
     <updated>2023-08-13T23:43:43.943Z</updated>
     
@@ -171,17 +171,17 @@
     </summary>
     
     
-      <category term="版本管理" scheme="https://hiyongz.github.io/categories/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
+      <category term="版本管理" scheme="categories/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
     
     
-      <category term="git" scheme="https://hiyongz.github.io/tags/git/"/>
+      <category term="git" scheme="tags/git/"/>
     
   </entry>
   
   <entry>
     <title>git merge 和 git rebase 的区别</title>
-    <link href="https://hiyongz.github.io/posts/version-management-notes-for-git-merge-and-git-rebase/"/>
-    <id>https://hiyongz.github.io/posts/version-management-notes-for-git-merge-and-git-rebase/</id>
+    <link href="posts/version-management-notes-for-git-merge-and-git-rebase/"/>
+    <id>posts/version-management-notes-for-git-merge-and-git-rebase/</id>
     <published>2023-02-15T12:16:00.000Z</published>
     <updated>2023-08-13T23:43:43.939Z</updated>
     
@@ -192,17 +192,17 @@
     </summary>
     
     
-      <category term="版本管理" scheme="https://hiyongz.github.io/categories/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
+      <category term="版本管理" scheme="categories/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
     
     
-      <category term="git" scheme="https://hiyongz.github.io/tags/git/"/>
+      <category term="git" scheme="tags/git/"/>
     
   </entry>
   
   <entry>
     <title>禅道二次开发技巧</title>
-    <link href="https://hiyongz.github.io/posts/devtest-notes-for-zentao-extension-skills/"/>
-    <id>https://hiyongz.github.io/posts/devtest-notes-for-zentao-extension-skills/</id>
+    <link href="posts/devtest-notes-for-zentao-extension-skills/"/>
+    <id>posts/devtest-notes-for-zentao-extension-skills/</id>
     <published>2023-02-15T12:12:00.000Z</published>
     <updated>2023-08-13T23:43:43.779Z</updated>
     
@@ -213,19 +213,19 @@
     </summary>
     
     
-      <category term="测试开发" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/"/>
+      <category term="测试开发" scheme="categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/"/>
     
-      <category term="禅道" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/%E7%A6%85%E9%81%93/"/>
+      <category term="禅道" scheme="categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/%E7%A6%85%E9%81%93/"/>
     
     
-      <category term="zentao" scheme="https://hiyongz.github.io/tags/zentao/"/>
+      <category term="zentao" scheme="tags/zentao/"/>
     
   </entry>
   
   <entry>
     <title>使用Jmeter抓取手机APP报文并进行APP接口测试</title>
-    <link href="https://hiyongz.github.io/posts/api-test-guide-for-mobile-app-with-jmeter/"/>
-    <id>https://hiyongz.github.io/posts/api-test-guide-for-mobile-app-with-jmeter/</id>
+    <link href="posts/api-test-guide-for-mobile-app-with-jmeter/"/>
+    <id>posts/api-test-guide-for-mobile-app-with-jmeter/</id>
     <published>2023-02-08T12:02:00.000Z</published>
     <updated>2023-08-13T23:43:43.599Z</updated>
     
@@ -236,23 +236,23 @@
     </summary>
     
     
-      <category term="自动化测试" scheme="https://hiyongz.github.io/categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
+      <category term="自动化测试" scheme="categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
     
-      <category term="接口测试" scheme="https://hiyongz.github.io/categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/"/>
+      <category term="接口测试" scheme="categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/"/>
     
     
-      <category term="接口测试" scheme="https://hiyongz.github.io/tags/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/"/>
+      <category term="接口测试" scheme="tags/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/"/>
     
-      <category term="代理工具" scheme="https://hiyongz.github.io/tags/%E4%BB%A3%E7%90%86%E5%B7%A5%E5%85%B7/"/>
+      <category term="代理工具" scheme="tags/%E4%BB%A3%E7%90%86%E5%B7%A5%E5%85%B7/"/>
     
-      <category term="Jmeter" scheme="https://hiyongz.github.io/tags/Jmeter/"/>
+      <category term="Jmeter" scheme="tags/Jmeter/"/>
     
   </entry>
   
   <entry>
     <title>持续集成：使用Jenkins API创建视图</title>
-    <link href="https://hiyongz.github.io/posts/continuous-integration-for-jenkins-api-create-view/"/>
-    <id>https://hiyongz.github.io/posts/continuous-integration-for-jenkins-api-create-view/</id>
+    <link href="posts/continuous-integration-for-jenkins-api-create-view/"/>
+    <id>posts/continuous-integration-for-jenkins-api-create-view/</id>
     <published>2023-01-12T12:12:00.000Z</published>
     <updated>2023-08-13T23:43:43.699Z</updated>
     
@@ -269,19 +269,19 @@
     </summary>
     
     
-      <category term="测试开发" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/"/>
+      <category term="测试开发" scheme="categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/"/>
     
-      <category term="持续集成" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/"/>
+      <category term="持续集成" scheme="categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/"/>
     
     
-      <category term="Jenkins" scheme="https://hiyongz.github.io/tags/Jenkins/"/>
+      <category term="Jenkins" scheme="tags/Jenkins/"/>
     
   </entry>
   
   <entry>
     <title>使用Fiddler抓取手机APP报文</title>
-    <link href="https://hiyongz.github.io/posts/api-test-guide-for-mobile-app-with-fiddler/"/>
-    <id>https://hiyongz.github.io/posts/api-test-guide-for-mobile-app-with-fiddler/</id>
+    <link href="posts/api-test-guide-for-mobile-app-with-fiddler/"/>
+    <id>posts/api-test-guide-for-mobile-app-with-fiddler/</id>
     <published>2023-01-05T12:02:00.000Z</published>
     <updated>2023-08-13T23:43:43.595Z</updated>
     
@@ -292,21 +292,21 @@
     </summary>
     
     
-      <category term="自动化测试" scheme="https://hiyongz.github.io/categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
+      <category term="自动化测试" scheme="categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
     
-      <category term="接口测试" scheme="https://hiyongz.github.io/categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/"/>
+      <category term="接口测试" scheme="categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/"/>
     
     
-      <category term="接口测试" scheme="https://hiyongz.github.io/tags/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/"/>
+      <category term="接口测试" scheme="tags/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/"/>
     
-      <category term="代理工具 - Fiddler" scheme="https://hiyongz.github.io/tags/%E4%BB%A3%E7%90%86%E5%B7%A5%E5%85%B7-Fiddler/"/>
+      <category term="代理工具 - Fiddler" scheme="tags/%E4%BB%A3%E7%90%86%E5%B7%A5%E5%85%B7-Fiddler/"/>
     
   </entry>
   
   <entry>
     <title>Android APP稳定性测试工具Fastbot</title>
-    <link href="https://hiyongz.github.io/posts/app-testing-tools-for-fastbot-android/"/>
-    <id>https://hiyongz.github.io/posts/app-testing-tools-for-fastbot-android/</id>
+    <link href="posts/app-testing-tools-for-fastbot-android/"/>
+    <id>posts/app-testing-tools-for-fastbot-android/</id>
     <published>2022-10-16T12:12:00.000Z</published>
     <updated>2023-08-13T23:43:43.651Z</updated>
     
@@ -317,19 +317,19 @@
     </summary>
     
     
-      <category term="自动化测试" scheme="https://hiyongz.github.io/categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
+      <category term="自动化测试" scheme="categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
     
-      <category term="App自动化测试" scheme="https://hiyongz.github.io/categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/App%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
+      <category term="App自动化测试" scheme="categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/App%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
     
     
-      <category term="Fastbot" scheme="https://hiyongz.github.io/tags/Fastbot/"/>
+      <category term="Fastbot" scheme="tags/Fastbot/"/>
     
   </entry>
   
   <entry>
     <title>Maven 安装和配置方法详解</title>
-    <link href="https://hiyongz.github.io/posts/java-maven-install-and-configure/"/>
-    <id>https://hiyongz.github.io/posts/java-maven-install-and-configure/</id>
+    <link href="posts/java-maven-install-and-configure/"/>
+    <id>posts/java-maven-install-and-configure/</id>
     <published>2022-10-14T12:12:00.000Z</published>
     <updated>2023-08-13T23:43:43.791Z</updated>
     
@@ -340,19 +340,19 @@
     </summary>
     
     
-      <category term="编程语言" scheme="https://hiyongz.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+      <category term="编程语言" scheme="categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
     
-      <category term="java" scheme="https://hiyongz.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/"/>
+      <category term="java" scheme="categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/"/>
     
     
-      <category term="Java" scheme="https://hiyongz.github.io/tags/Java/"/>
+      <category term="Java" scheme="tags/Java/"/>
     
   </entry>
   
   <entry>
     <title>持续集成：通过Jenkins API创建项目和节点</title>
-    <link href="https://hiyongz.github.io/posts/continuous-integration-for-jenkins-api-create-job-and-slave/"/>
-    <id>https://hiyongz.github.io/posts/continuous-integration-for-jenkins-api-create-job-and-slave/</id>
+    <link href="posts/continuous-integration-for-jenkins-api-create-job-and-slave/"/>
+    <id>posts/continuous-integration-for-jenkins-api-create-job-and-slave/</id>
     <published>2022-09-28T12:16:00.000Z</published>
     <updated>2023-08-13T23:43:43.695Z</updated>
     
@@ -363,21 +363,21 @@
     </summary>
     
     
-      <category term="自动化测试" scheme="https://hiyongz.github.io/categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
+      <category term="自动化测试" scheme="categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
     
-      <category term="测试开发" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/"/>
+      <category term="测试开发" scheme="categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/"/>
     
-      <category term="持续集成" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/"/>
+      <category term="持续集成" scheme="categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/"/>
     
     
-      <category term="Jenkins" scheme="https://hiyongz.github.io/tags/Jenkins/"/>
+      <category term="Jenkins" scheme="tags/Jenkins/"/>
     
   </entry>
   
   <entry>
     <title>持续集成平台Jenkins：docker镜像升级</title>
-    <link href="https://hiyongz.github.io/posts/continuous-integration-for-jenkins-docker-images-upgrade/"/>
-    <id>https://hiyongz.github.io/posts/continuous-integration-for-jenkins-docker-images-upgrade/</id>
+    <link href="posts/continuous-integration-for-jenkins-docker-images-upgrade/"/>
+    <id>posts/continuous-integration-for-jenkins-docker-images-upgrade/</id>
     <published>2022-09-21T12:12:00.000Z</published>
     <updated>2023-08-13T23:43:43.699Z</updated>
     
@@ -388,21 +388,21 @@
     </summary>
     
     
-      <category term="自动化测试" scheme="https://hiyongz.github.io/categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
+      <category term="自动化测试" scheme="categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
     
-      <category term="测试开发" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/"/>
+      <category term="测试开发" scheme="categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/"/>
     
-      <category term="持续集成" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/"/>
+      <category term="持续集成" scheme="categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/"/>
     
     
-      <category term="Jenkins" scheme="https://hiyongz.github.io/tags/Jenkins/"/>
+      <category term="Jenkins" scheme="tags/Jenkins/"/>
     
   </entry>
   
   <entry>
     <title>MySQL索引介绍</title>
-    <link href="https://hiyongz.github.io/posts/database-for-mysql-index/"/>
-    <id>https://hiyongz.github.io/posts/database-for-mysql-index/</id>
+    <link href="posts/database-for-mysql-index/"/>
+    <id>posts/database-for-mysql-index/</id>
     <published>2022-09-07T12:12:00.000Z</published>
     <updated>2023-08-13T23:43:43.747Z</updated>
     
@@ -414,19 +414,19 @@
     </summary>
     
     
-      <category term="测试开发" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/"/>
+      <category term="测试开发" scheme="categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/"/>
     
-      <category term="数据库" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="数据库" scheme="categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
     
-      <category term="MySQL" scheme="https://hiyongz.github.io/tags/MySQL/"/>
+      <category term="MySQL" scheme="tags/MySQL/"/>
     
   </entry>
   
   <entry>
     <title>Java环境安装配置步骤介绍</title>
-    <link href="https://hiyongz.github.io/posts/java-install-on-windows-and-centos7/"/>
-    <id>https://hiyongz.github.io/posts/java-install-on-windows-and-centos7/</id>
+    <link href="posts/java-install-on-windows-and-centos7/"/>
+    <id>posts/java-install-on-windows-and-centos7/</id>
     <published>2022-09-04T12:02:00.000Z</published>
     <updated>2023-08-13T23:43:43.791Z</updated>
     
@@ -437,19 +437,19 @@
     </summary>
     
     
-      <category term="编程语言" scheme="https://hiyongz.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+      <category term="编程语言" scheme="categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
     
-      <category term="java" scheme="https://hiyongz.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/"/>
+      <category term="java" scheme="categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/java/"/>
     
     
-      <category term="java" scheme="https://hiyongz.github.io/tags/java/"/>
+      <category term="java" scheme="tags/java/"/>
     
   </entry>
   
   <entry>
     <title>MySQL锁：全局锁、表级锁和行锁</title>
-    <link href="https://hiyongz.github.io/posts/database-for-mysql-lock/"/>
-    <id>https://hiyongz.github.io/posts/database-for-mysql-lock/</id>
+    <link href="posts/database-for-mysql-lock/"/>
+    <id>posts/database-for-mysql-lock/</id>
     <published>2022-08-25T12:12:00.000Z</published>
     <updated>2023-08-13T23:43:43.755Z</updated>
     
@@ -460,19 +460,19 @@
     </summary>
     
     
-      <category term="测试开发" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/"/>
+      <category term="测试开发" scheme="categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/"/>
     
-      <category term="数据库" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="数据库" scheme="categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
     
-      <category term="MySQL" scheme="https://hiyongz.github.io/tags/MySQL/"/>
+      <category term="MySQL" scheme="tags/MySQL/"/>
     
   </entry>
   
   <entry>
     <title>MySQL事务：事务隔离</title>
-    <link href="https://hiyongz.github.io/posts/database-for-mysql-transaction-isolation/"/>
-    <id>https://hiyongz.github.io/posts/database-for-mysql-transaction-isolation/</id>
+    <link href="posts/database-for-mysql-transaction-isolation/"/>
+    <id>posts/database-for-mysql-transaction-isolation/</id>
     <published>2022-08-23T12:12:00.000Z</published>
     <updated>2023-08-13T23:43:43.759Z</updated>
     
@@ -483,12 +483,12 @@
     </summary>
     
     
-      <category term="测试开发" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/"/>
+      <category term="测试开发" scheme="categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/"/>
     
-      <category term="数据库" scheme="https://hiyongz.github.io/categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="数据库" scheme="categories/%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
     
-      <category term="MySQL" scheme="https://hiyongz.github.io/tags/MySQL/"/>
+      <category term="MySQL" scheme="tags/MySQL/"/>
     
   </entry>
   

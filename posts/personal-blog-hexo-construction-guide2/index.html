@@ -42,7 +42,7 @@
 <meta property="og:image" content="/posts/personal-blog-hexo-construction-guide2/hexo-d-error.png">
 <meta property="article:published_time" content="2021-02-06T12:52:00.000Z">
 <meta property="article:modified_time" content="2023-08-13T23:43:43.855Z">
-<meta property="article:author" content="HiYo">
+<meta property="article:author" content="WOW">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="GitHub Pages">
 <meta property="article:tag" content="Gitee Pages">
@@ -227,7 +227,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/logo_android-chrome-192x192-wechat.png">
-      <meta itemprop="name" content="HiYo">
+      <meta itemprop="name" content="WOW">
       <meta itemprop="description" content="">
     </span>
 
@@ -309,7 +309,7 @@
 
       
         <p>本文介绍Hexo博客Next主题配置，博客配置效果：<a target="_blank" rel="noopener" href="https://来自HY.gitee.io/">https://来自HY.gitee.io/</a>。<br><a id="more"></a></p>
-<h1 id="配置站点信息"><a href="#配置站点信息" class="headerlink" title="配置站点信息"></a>配置站点信息</h1><p>修改根目录下的 _config.yml 文件，找到 Site 区域，配置站点标题 title、副标题 subtitle 、关键字 keywords，语言等内容：<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">\#</span> <span class="string">Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">来自HY</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">XXXXXXXXXXXXXXXXXX</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">“技术分享，计算机网络，自动化测试，python，Java，机器学习”</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">HiYo</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="attr">timezone:</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="配置站点信息"><a href="#配置站点信息" class="headerlink" title="配置站点信息"></a>配置站点信息</h1><p>修改根目录下的 _config.yml 文件，找到 Site 区域，配置站点标题 title、副标题 subtitle 、关键字 keywords，语言等内容：<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">\#</span> <span class="string">Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">来自HY</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">XXXXXXXXXXXXXXXXXX</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">“技术分享，计算机网络，自动化测试，python，Java，机器学习”</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">WOW</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="attr">timezone:</span></span><br></pre></td></tr></table></figure></p>
 <h1 id="修改主题"><a href="#修改主题" class="headerlink" title="修改主题"></a>修改主题</h1><p>Hexo有各种炫酷的主题，可以去 <a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes/</a> 查看，选择自己喜欢的主题，个人比较喜欢简洁的，比如Next主题，下面介绍Next主题配置方法。</p>
 <p>Next 主题GitHub地址：<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next">https://github.com/theme-next/hexo-theme-next</a></p>
 <p>命令行进入到项目的根目录，执行如下命令，下载到themes/next 文件夹下：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/theme-next/hexo-theme-next.git themes/next</span><br></pre></td></tr></table></figure><br>或者直接下载</p>
@@ -333,7 +333,7 @@
 <p><strong>1. 安装插件hexo-generator-feed</strong><br>在项目根目录下运行命令：<code>npm install hexo-generator-feed --save</code></p>
 <p>安装完成之后，站点会自动生成 RSS Feed 文件</p>
 <p><strong>2. 编辑项目配置文件</strong><br>在项目根目录下的 _config.yml 文件中添加以下代码<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">feed:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">atom</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">atom.xml</span></span><br><span class="line">  <span class="attr">limit:</span> <span class="number">20</span></span><br><span class="line">  <span class="attr">hub:</span></span><br><span class="line">  <span class="attr">content:</span></span><br><span class="line">  <span class="attr">content_limit:</span> <span class="number">140</span></span><br><span class="line">  <span class="attr">content_limit_delim:</span> <span class="string">&quot; &quot;</span></span><br><span class="line">  <span class="attr">order_by:</span> <span class="string">-date</span></span><br><span class="line">  <span class="attr">icon:</span> <span class="string">icon.png</span></span><br></pre></td></tr></table></figure><br>将 url 修改为自己博客的域名<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">url:</span> <span class="string">https://来自HY.gitee.io</span></span><br></pre></td></tr></table></figure></p>
-<p><strong>3. 修改 Next 主题配置文件</strong><br>修改Next 主题配置文件_config.yml：<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">social:</span></span><br><span class="line">  <span class="attr">GitHub:</span> <span class="string">https://github.com/来自HYz/||</span> <span class="string">fa</span> <span class="string">fa-github</span>  </span><br><span class="line">  <span class="comment"># E-Mail: zhiyo2016@163.com/|| envelope</span></span><br><span class="line">  <span class="attr">RSS:</span> <span class="string">/atom.xml</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-rss</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>3. 修改 Next 主题配置文件</strong><br>修改Next 主题配置文件_config.yml：<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">social:</span></span><br><span class="line">  <span class="attr">GitHub:</span> <span class="string">https://github.com/来自HYz/||</span> <span class="string">fa</span> <span class="string">fa-github</span>  </span><br><span class="line">  <span class="comment"># E-Mail: zWOW2016@163.com/|| envelope</span></span><br><span class="line">  <span class="attr">RSS:</span> <span class="string">/atom.xml</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-rss</span></span><br></pre></td></tr></table></figure></p>
 <h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><p>修改Next 主题配置文件 _config.yml ，设置代码块样式，比如设置为类似 Mac 的样式：<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">codeblock:</span></span><br><span class="line">  <span class="attr">highlight_theme:</span> <span class="string">normal</span></span><br><span class="line">  <span class="comment"># Add copy button on codeblock</span></span><br><span class="line">  <span class="attr">copy_button:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">    <span class="comment"># Show text copy result.</span></span><br><span class="line">    <span class="attr">show_result:</span> <span class="literal">true</span></span><br><span class="line">    <span class="comment"># Available values: default | flat | mac</span></span><br><span class="line">    <span class="attr">style:</span> <span class="string">mac</span></span><br></pre></td></tr></table></figure></p>
 <h2 id="回到页面顶部"><a href="#回到页面顶部" class="headerlink" title="回到页面顶部"></a>回到页面顶部</h2><p>修改Next 主题配置文件 _config.yml 的 back2top 字段：<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">back2top:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># Back to top in sidebar.</span></span><br><span class="line">  <span class="attr">sidebar:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># Scroll percent label in b2t button.</span></span><br><span class="line">  <span class="attr">scrollpercent:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></p>
 <h2 id="阅读进度条"><a href="#阅读进度条" class="headerlink" title="阅读进度条"></a>阅读进度条</h2><p>在文章上侧显示阅读进度条，修改Next 主题配置文件 _config.yml：<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">reading_progress:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># Available values: top | bottom</span></span><br><span class="line">  <span class="attr">position:</span> <span class="string">top</span></span><br><span class="line">  <span class="attr">color:</span> <span class="string">&quot;#37c6c0&quot;</span></span><br><span class="line">  <span class="attr">height:</span> <span class="string">2px</span></span><br></pre></td></tr></table></figure></p>
@@ -404,7 +404,7 @@
   <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
 
   <p><span>本文标题:</span>Hexo个人博客主题配置</a></p>
-  <p><span>文章作者:</span>hiyo</a></p>
+  <p><span>文章作者:</span>WOW</a></p>
   <p><span>文章链接:</span><a href="/posts/personal-blog-hexo-construction-guide2/" title="Hexo个人博客主题配置">/posts/personal-blog-hexo-construction-guide2/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="/posts/personal-blog-hexo-construction-guide2/"  aria-label="复制成功！"></i></span>
   </p>
@@ -512,9 +512,9 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="HiYo"
+    <img class="site-author-image" itemprop="image" alt="WOW"
       src="/images/logo_android-chrome-192x192-wechat.png">
-  <p class="site-author-name" itemprop="name">HiYo</p>
+  <p class="site-author-name" itemprop="name">WOW</p>
   <div class="site-description" itemprop="description"></div>
 </div>
 <div class="site-state-wrap motion-element">
@@ -578,7 +578,7 @@
   <span class="with-love">
     <i class="user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">HiYo</span>
+  <span class="author" itemprop="copyrightHolder">WOW</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>

@@ -25,7 +25,7 @@
   <meta name="description" content="Unix shell 中内置了命令行参数解析函数getopts，但它仅支持简单的参数解析，不支持长参数，getopt是getopts的增强版，支持长参数。在Python笔记：命令行参数解析中介绍了Python中的命令行参数解析方法getopt()，本文介绍shell中如何使用getopt进行命令行参数解析。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux Bash之getopt命令行参数解析">
-<meta property="og:url" content="https://hiyongz.github.io/posts/linux-shell-for-getopt/index.html">
+<meta property="og:url" content="/posts/linux-shell-for-getopt/index.html">
 <meta property="og:site_name" content="HiYong">
 <meta property="og:description" content="Unix shell 中内置了命令行参数解析函数getopts，但它仅支持简单的参数解析，不支持长参数，getopt是getopts的增强版，支持长参数。在Python笔记：命令行参数解析中介绍了Python中的命令行参数解析方法getopt()，本文介绍shell中如何使用getopt进行命令行参数解析。">
 <meta property="og:locale" content="zh_CN">
@@ -36,7 +36,7 @@
 <meta property="article:tag" content="getopt">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://hiyongz.github.io/posts/linux-shell-for-getopt/">
+<link rel="canonical" href="/posts/linux-shell-for-getopt/">
 
 
 <script id="page-configurations">
@@ -210,7 +210,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://hiyongz.github.io/posts/linux-shell-for-getopt/">
+    <link itemprop="mainEntityOfPage" href="/posts/linux-shell-for-getopt/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/logo_android-chrome-192x192-wechat.png">
@@ -295,7 +295,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>Unix shell 中内置了命令行参数解析函数getopts，但它仅支持简单的参数解析，不支持长参数，getopt是getopts的增强版，支持长参数。在<a href="https://hiyongz.github.io/posts/python-notes-for-getopt/">Python笔记：命令行参数解析</a>中介绍了Python中的命令行参数解析方法getopt()，本文介绍shell中如何使用getopt进行命令行参数解析。</p>
+        <p>Unix shell 中内置了命令行参数解析函数getopts，但它仅支持简单的参数解析，不支持长参数，getopt是getopts的增强版，支持长参数。在<a href="/posts/python-notes-for-getopt/">Python笔记：命令行参数解析</a>中介绍了Python中的命令行参数解析方法getopt()，本文介绍shell中如何使用getopt进行命令行参数解析。</p>
 <a id="more"></a>
 <p>先看下面脚本(test_getopt.sh)：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line">FIELD=<span class="built_in">unset</span></span><br><span class="line">DF=<span class="built_in">unset</span></span><br><span class="line">COUNT=<span class="built_in">unset</span></span><br><span class="line">green=<span class="string">&#x27;\033[32m&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">help</span>()</span><br><span class="line">&#123;</span><br><span class="line">  Usage=<span class="string">&quot;Usage: sh test_getopt.sh [OPTION]  \n\</span></span><br><span class="line"><span class="string">  Options:\n\</span></span><br><span class="line"><span class="string">        [ -f | --field FIELD]  \t\t-- 字段 \n \</span></span><br><span class="line"><span class="string">        [ -Y | --display-filter DF] \t-- 条件 \n \</span></span><br><span class="line"><span class="string">        [ -c | --count COUNT ]  \t-- 计数 \n \</span></span><br><span class="line"><span class="string">        [ -h | --help ]  \t\t-- 帮助信息  \n \</span></span><br><span class="line"><span class="string">        &quot;</span></span><br><span class="line">  <span class="built_in">echo</span> -e <span class="variable">$&#123;green&#125;</span> <span class="variable">$Usage</span></span><br><span class="line">  <span class="built_in">exit</span> 2</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ARGS=$(getopt -a -n test_getopt.sh -o f:Y:ch --long field:,display-filter:,count,<span class="built_in">help</span> -- <span class="string">&quot;<span class="variable">$@</span>&quot;</span>)</span><br><span class="line">VALID_ARGS=$?</span><br><span class="line"><span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$VALID_ARGS</span>&quot;</span> != <span class="string">&quot;0&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line">  <span class="built_in">help</span>  </span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">eval</span> <span class="built_in">set</span> -- <span class="string">&quot;<span class="variable">$ARGS</span>&quot;</span></span><br><span class="line"><span class="keyword">while</span> :</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">  <span class="keyword">case</span> <span class="string">&quot;<span class="variable">$1</span>&quot;</span> <span class="keyword">in</span></span><br><span class="line">    -f | --field)            FIELD=<span class="string">&quot;<span class="variable">$2</span>&quot;</span>   ; <span class="built_in">shift</span> 2  ;;</span><br><span class="line">    -Y | --display-filter)   DF=<span class="string">&quot;<span class="variable">$2</span>&quot;</span>      ; <span class="built_in">shift</span> 2  ;;</span><br><span class="line">    -c | --count)            COUNT=2      ; <span class="built_in">shift</span>    ;;</span><br><span class="line">    -h | --<span class="built_in">help</span>)             <span class="built_in">help</span>; <span class="built_in">exit</span> 0 ; <span class="built_in">shift</span>    ;;    </span><br><span class="line">    --) <span class="built_in">shift</span>; <span class="built_in">break</span> ;;</span><br><span class="line">  <span class="keyword">esac</span></span><br><span class="line"><span class="keyword">done</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;FIELD   : <span class="variable">$FIELD</span>&quot;</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;DF   : <span class="variable">$DF</span> &quot;</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;COUNT : <span class="variable">$COUNT</span>&quot;</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;其余参数: <span class="variable">$@</span>&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">exit</span> 0</span><br></pre></td></tr></table></figure><br>下面对脚本进行简要解释：</p>
 <ol>
@@ -355,8 +355,8 @@
 
   <p><span>本文标题:</span>Linux Bash之getopt命令行参数解析</a></p>
   <p><span>文章作者:</span>hiyo</a></p>
-  <p><span>文章链接:</span><a href="/posts/linux-shell-for-getopt/" title="Linux Bash之getopt命令行参数解析">https://hiyongz.github.io/posts/linux-shell-for-getopt/</a>
-    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://hiyongz.github.io/posts/linux-shell-for-getopt/"  aria-label="复制成功！"></i></span>
+  <p><span>文章链接:</span><a href="/posts/linux-shell-for-getopt/" title="Linux Bash之getopt命令行参数解析">/posts/linux-shell-for-getopt/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="/posts/linux-shell-for-getopt/"  aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span>本博客文章除特别声明外，均采用<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-ND 4.0</a> 许可协议。转载请保留原文链接及作者。</p>  
 </div>

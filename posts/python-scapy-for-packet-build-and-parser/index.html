@@ -25,17 +25,17 @@
   <meta name="description" content="Scapy是一款强大的交互式数据包处理工具、数据包生成器、网络扫描器、网络发现、攻击工具和包嗅探工具。能灵活地构造各种数据包、发送数据包、包嗅探、应答和反馈匹配等功能。它可以实现Nmap扫描工具、tcpdump抓包工具 、 tshark工具、Netdiscover网络扫描工具的功能。 Nmap、Netdiscover、tcpdump和tshark介绍可参考：  Nmap：Nmap扫描工具介绍 tc">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python Scapy 报文构造和解析">
-<meta property="og:url" content="https://hiyongz.github.io/posts/python-scapy-for-packet-build-and-parser/index.html">
+<meta property="og:url" content="/posts/python-scapy-for-packet-build-and-parser/index.html">
 <meta property="og:site_name" content="HiYong">
 <meta property="og:description" content="Scapy是一款强大的交互式数据包处理工具、数据包生成器、网络扫描器、网络发现、攻击工具和包嗅探工具。能灵活地构造各种数据包、发送数据包、包嗅探、应答和反馈匹配等功能。它可以实现Nmap扫描工具、tcpdump抓包工具 、 tshark工具、Netdiscover网络扫描工具的功能。 Nmap、Netdiscover、tcpdump和tshark介绍可参考：  Nmap：Nmap扫描工具介绍 tc">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://hiyongz.github.io/posts/python-scapy-for-packet-build-and-parser/scapy.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/python-scapy-for-packet-build-and-parser/scapy-ls.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/python-scapy-for-packet-build-and-parser/scapy-ls-ip.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/python-scapy-for-packet-build-and-parser/scapy-dhcpv6-1.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/python-scapy-for-packet-build-and-parser/scapy-dhcpv6-2.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/python-scapy-for-packet-build-and-parser/scapy-ls-opts.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/python-scapy-for-packet-build-and-parser/scapy-packet.png">
+<meta property="og:image" content="/posts/python-scapy-for-packet-build-and-parser/scapy.png">
+<meta property="og:image" content="/posts/python-scapy-for-packet-build-and-parser/scapy-ls.png">
+<meta property="og:image" content="/posts/python-scapy-for-packet-build-and-parser/scapy-ls-ip.png">
+<meta property="og:image" content="/posts/python-scapy-for-packet-build-and-parser/scapy-dhcpv6-1.png">
+<meta property="og:image" content="/posts/python-scapy-for-packet-build-and-parser/scapy-dhcpv6-2.png">
+<meta property="og:image" content="/posts/python-scapy-for-packet-build-and-parser/scapy-ls-opts.png">
+<meta property="og:image" content="/posts/python-scapy-for-packet-build-and-parser/scapy-packet.png">
 <meta property="article:published_time" content="2021-02-17T12:12:00.000Z">
 <meta property="article:modified_time" content="2023-08-13T23:43:43.871Z">
 <meta property="article:author" content="HiYo">
@@ -44,9 +44,9 @@
 <meta property="article:tag" content="wireshark">
 <meta property="article:tag" content="scapy">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://hiyongz.github.io/posts/python-scapy-for-packet-build-and-parser/scapy.png">
+<meta name="twitter:image" content="/posts/python-scapy-for-packet-build-and-parser/scapy.png">
 
-<link rel="canonical" href="https://hiyongz.github.io/posts/python-scapy-for-packet-build-and-parser/">
+<link rel="canonical" href="/posts/python-scapy-for-packet-build-and-parser/">
 
 
 <script id="page-configurations">
@@ -220,7 +220,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://hiyongz.github.io/posts/python-scapy-for-packet-build-and-parser/">
+    <link itemprop="mainEntityOfPage" href="/posts/python-scapy-for-packet-build-and-parser/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/logo_android-chrome-192x192-wechat.png">
@@ -419,8 +419,8 @@ count，发送报文数，默认发送一个报文<br>iface，指定接口</li>
 
   <p><span>本文标题:</span>Python Scapy 报文构造和解析</a></p>
   <p><span>文章作者:</span>hiyo</a></p>
-  <p><span>文章链接:</span><a href="/posts/python-scapy-for-packet-build-and-parser/" title="Python Scapy 报文构造和解析">https://hiyongz.github.io/posts/python-scapy-for-packet-build-and-parser/</a>
-    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://hiyongz.github.io/posts/python-scapy-for-packet-build-and-parser/"  aria-label="复制成功！"></i></span>
+  <p><span>文章链接:</span><a href="/posts/python-scapy-for-packet-build-and-parser/" title="Python Scapy 报文构造和解析">/posts/python-scapy-for-packet-build-and-parser/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="/posts/python-scapy-for-packet-build-and-parser/"  aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span>本博客文章除特别声明外，均采用<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-ND 4.0</a> 许可协议。转载请保留原文链接及作者。</p>  
 </div>

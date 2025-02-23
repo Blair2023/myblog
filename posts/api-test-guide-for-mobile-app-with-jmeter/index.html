@@ -25,23 +25,23 @@
   <meta name="description" content="Jmeter是一个比较常用的接口测试工具，尤其是接口性能测试。当然它也可以用来测试手机APP的HTTP接口，我在Fiddler抓取手机APP报文 和 接口测试代理工具charles mock测试 分别介绍了Fiddler和charles 如何抓取APP报文，本文介绍使用Jmeter来抓取APP报文以及进行手机APP接口测试。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用Jmeter抓取手机APP报文并进行APP接口测试">
-<meta property="og:url" content="https://hiyongz.github.io/posts/api-test-guide-for-mobile-app-with-jmeter/index.html">
+<meta property="og:url" content="/posts/api-test-guide-for-mobile-app-with-jmeter/index.html">
 <meta property="og:site_name" content="HiYong">
 <meta property="og:description" content="Jmeter是一个比较常用的接口测试工具，尤其是接口性能测试。当然它也可以用来测试手机APP的HTTP接口，我在Fiddler抓取手机APP报文 和 接口测试代理工具charles mock测试 分别介绍了Fiddler和charles 如何抓取APP报文，本文介绍使用Jmeter来抓取APP报文以及进行手机APP接口测试。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://hiyongz.github.io/posts/api-test-guide-for-mobile-app-with-jmeter/jmeter-main-page.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/api-test-guide-for-mobile-app-with-jmeter/jmeter-add-http-test-script-recorder.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/api-test-guide-for-mobile-app-with-jmeter/jmeter-add-http-test-script-recorder2.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/api-test-guide-for-mobile-app-with-jmeter/jmeter-add-thread-group.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/api-test-guide-for-mobile-app-with-jmeter/jmeter-add-recording-controller.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/api-test-guide-for-mobile-app-with-jmeter/jmeter-add-view-results-tree.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/api-test-guide-for-mobile-app-with-jmeter/jmeter-add-http-test-script-recorder3.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/api-test-guide-for-mobile-app-with-jmeter/ApacheJMeterTemporaryRootCA.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/api-test-guide-for-mobile-app-with-jmeter/phone-proxy-config.jpg">
-<meta property="og:image" content="https://hiyongz.github.io/posts/api-test-guide-for-mobile-app-with-jmeter/jmeter-add-http-test-script-recorder-start.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/api-test-guide-for-mobile-app-with-jmeter/jmeter-recording-controller.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/api-test-guide-for-mobile-app-with-jmeter/jmeter-recording-controller2.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/api-test-guide-for-mobile-app-with-jmeter/jmeter-view-results-tree.png">
+<meta property="og:image" content="/posts/api-test-guide-for-mobile-app-with-jmeter/jmeter-main-page.png">
+<meta property="og:image" content="/posts/api-test-guide-for-mobile-app-with-jmeter/jmeter-add-http-test-script-recorder.png">
+<meta property="og:image" content="/posts/api-test-guide-for-mobile-app-with-jmeter/jmeter-add-http-test-script-recorder2.png">
+<meta property="og:image" content="/posts/api-test-guide-for-mobile-app-with-jmeter/jmeter-add-thread-group.png">
+<meta property="og:image" content="/posts/api-test-guide-for-mobile-app-with-jmeter/jmeter-add-recording-controller.png">
+<meta property="og:image" content="/posts/api-test-guide-for-mobile-app-with-jmeter/jmeter-add-view-results-tree.png">
+<meta property="og:image" content="/posts/api-test-guide-for-mobile-app-with-jmeter/jmeter-add-http-test-script-recorder3.png">
+<meta property="og:image" content="/posts/api-test-guide-for-mobile-app-with-jmeter/ApacheJMeterTemporaryRootCA.png">
+<meta property="og:image" content="/posts/api-test-guide-for-mobile-app-with-jmeter/phone-proxy-config.jpg">
+<meta property="og:image" content="/posts/api-test-guide-for-mobile-app-with-jmeter/jmeter-add-http-test-script-recorder-start.png">
+<meta property="og:image" content="/posts/api-test-guide-for-mobile-app-with-jmeter/jmeter-recording-controller.png">
+<meta property="og:image" content="/posts/api-test-guide-for-mobile-app-with-jmeter/jmeter-recording-controller2.png">
+<meta property="og:image" content="/posts/api-test-guide-for-mobile-app-with-jmeter/jmeter-view-results-tree.png">
 <meta property="article:published_time" content="2023-02-08T12:02:00.000Z">
 <meta property="article:modified_time" content="2023-08-13T23:43:43.599Z">
 <meta property="article:author" content="HiYo">
@@ -49,9 +49,9 @@
 <meta property="article:tag" content="代理工具">
 <meta property="article:tag" content="Jmeter">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://hiyongz.github.io/posts/api-test-guide-for-mobile-app-with-jmeter/jmeter-main-page.png">
+<meta name="twitter:image" content="/posts/api-test-guide-for-mobile-app-with-jmeter/jmeter-main-page.png">
 
-<link rel="canonical" href="https://hiyongz.github.io/posts/api-test-guide-for-mobile-app-with-jmeter/">
+<link rel="canonical" href="/posts/api-test-guide-for-mobile-app-with-jmeter/">
 
 
 <script id="page-configurations">
@@ -225,7 +225,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://hiyongz.github.io/posts/api-test-guide-for-mobile-app-with-jmeter/">
+    <link itemprop="mainEntityOfPage" href="/posts/api-test-guide-for-mobile-app-with-jmeter/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/logo_android-chrome-192x192-wechat.png">
@@ -378,8 +378,8 @@
 
   <p><span>本文标题:</span>使用Jmeter抓取手机APP报文并进行APP接口测试</a></p>
   <p><span>文章作者:</span>hiyo</a></p>
-  <p><span>文章链接:</span><a href="/posts/api-test-guide-for-mobile-app-with-jmeter/" title="使用Jmeter抓取手机APP报文并进行APP接口测试">https://hiyongz.github.io/posts/api-test-guide-for-mobile-app-with-jmeter/</a>
-    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://hiyongz.github.io/posts/api-test-guide-for-mobile-app-with-jmeter/"  aria-label="复制成功！"></i></span>
+  <p><span>文章链接:</span><a href="/posts/api-test-guide-for-mobile-app-with-jmeter/" title="使用Jmeter抓取手机APP报文并进行APP接口测试">/posts/api-test-guide-for-mobile-app-with-jmeter/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="/posts/api-test-guide-for-mobile-app-with-jmeter/"  aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span>本博客文章除特别声明外，均采用<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-ND 4.0</a> 许可协议。转载请保留原文链接及作者。</p>  
 </div>

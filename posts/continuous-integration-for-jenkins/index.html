@@ -25,81 +25,81 @@
   <meta name="description" content="持续集成（Continuous integration，CI）是软件开发和发布流程中最重要的组成部分，有利于加快开发进度。Jenkins是常用的持续集成管理工具，本文将简要介绍Jenkins持续集成工具。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="持续集成平台Jenkins配置方法介绍">
-<meta property="og:url" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/index.html">
+<meta property="og:url" content="/posts/continuous-integration-for-jenkins/index.html">
 <meta property="og:site_name" content="HiYong">
 <meta property="og:description" content="持续集成（Continuous integration，CI）是软件开发和发布流程中最重要的组成部分，有利于加快开发进度。Jenkins是常用的持续集成管理工具，本文将简要介绍Jenkins持续集成工具。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/continuous-integration.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/CI-software-compare.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-shell-executable.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-manage-plugin.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-security.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-security-manage-user.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-security-matrix.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-job-security-matrix.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-job-security-matrix2.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-security-role-based-authorization-strategy.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-security-role-based-strategy.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-security-manage-and-assign-roles.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-security-manage-and-assign-roles2.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-security-manage-roles.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-security-manage-roles-item-roles.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-security-manage-roles-node-roles.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-security-assign-roles-global-roles.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-security-assign-roles-item-roles.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-security-assign-roles-node-roles.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/csrf-disabled.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-slave-node-configure.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-manage-node.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-slave-node-verfication-strategy.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-slave-status.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-windows-node-configure.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-windows-node-connect.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-windows-node-run.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-windows-slave-status.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/inbound-tcp-agent-protocol.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/windows-plan-task.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/windows-plan-task2.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/windows-plan-task3.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/windows-plan-task4.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/windows-plan-task5.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/windows-plan-task6.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/windows-plan-task7.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-create-new-item.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-freestyle-project.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-edit-new-item.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-build-now.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-console-output.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/windows-node-configure.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-father-child-job.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-first-job-build.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-second-job-build.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-second-job-build-triggers.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-second-job-build2.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-first-job-run.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-first-job-console-output.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-second-test-status.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-job-failure.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-email-extension.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-email-address.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-extend-email-notification.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-email-notification.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-test-email.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-email-content.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-email-default-triggers.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-job-email-notification.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-job-email-notification2.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-email-build.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-email.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/jenkins-discard-old-builds.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/continuous-integration.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/CI-software-compare.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-shell-executable.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-manage-plugin.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-security.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-security-manage-user.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-security-matrix.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-job-security-matrix.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-job-security-matrix2.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-security-role-based-authorization-strategy.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-security-role-based-strategy.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-security-manage-and-assign-roles.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-security-manage-and-assign-roles2.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-security-manage-roles.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-security-manage-roles-item-roles.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-security-manage-roles-node-roles.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-security-assign-roles-global-roles.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-security-assign-roles-item-roles.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-security-assign-roles-node-roles.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/csrf-disabled.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-slave-node-configure.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-manage-node.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-slave-node-verfication-strategy.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-slave-status.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-windows-node-configure.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-windows-node-connect.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-windows-node-run.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-windows-slave-status.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/inbound-tcp-agent-protocol.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/windows-plan-task.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/windows-plan-task2.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/windows-plan-task3.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/windows-plan-task4.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/windows-plan-task5.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/windows-plan-task6.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/windows-plan-task7.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-create-new-item.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-freestyle-project.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-edit-new-item.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-build-now.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-console-output.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/windows-node-configure.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-father-child-job.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-first-job-build.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-second-job-build.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-second-job-build-triggers.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-second-job-build2.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-first-job-run.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-first-job-console-output.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-second-test-status.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-job-failure.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-email-extension.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-email-address.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-extend-email-notification.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-email-notification.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-test-email.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-email-content.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-email-default-triggers.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-job-email-notification.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-job-email-notification2.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-email-build.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-email.png">
+<meta property="og:image" content="/posts/continuous-integration-for-jenkins/jenkins-discard-old-builds.png">
 <meta property="article:published_time" content="2021-03-05T12:12:00.000Z">
 <meta property="article:modified_time" content="2023-08-13T23:43:43.711Z">
 <meta property="article:author" content="HiYo">
 <meta property="article:tag" content="Jenkins">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/continuous-integration.png">
+<meta name="twitter:image" content="/posts/continuous-integration-for-jenkins/continuous-integration.png">
 
-<link rel="canonical" href="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/">
+<link rel="canonical" href="/posts/continuous-integration-for-jenkins/">
 
 
 <script id="page-configurations">
@@ -273,7 +273,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/">
+    <link itemprop="mainEntityOfPage" href="/posts/continuous-integration-for-jenkins/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/logo_android-chrome-192x192-wechat.png">
@@ -596,8 +596,8 @@
 
   <p><span>本文标题:</span>持续集成平台Jenkins配置方法介绍</a></p>
   <p><span>文章作者:</span>hiyo</a></p>
-  <p><span>文章链接:</span><a href="/posts/continuous-integration-for-jenkins/" title="持续集成平台Jenkins配置方法介绍">https://hiyongz.github.io/posts/continuous-integration-for-jenkins/</a>
-    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://hiyongz.github.io/posts/continuous-integration-for-jenkins/"  aria-label="复制成功！"></i></span>
+  <p><span>文章链接:</span><a href="/posts/continuous-integration-for-jenkins/" title="持续集成平台Jenkins配置方法介绍">/posts/continuous-integration-for-jenkins/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="/posts/continuous-integration-for-jenkins/"  aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span>本博客文章除特别声明外，均采用<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-ND 4.0</a> 许可协议。转载请保留原文链接及作者。</p>  
 </div>

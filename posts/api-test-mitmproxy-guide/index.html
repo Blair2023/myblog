@@ -25,25 +25,25 @@
   <meta name="description" content="在接口测试中，会用到抓包工具或者代理工具，常用代理工具包括charles、 burpsuite、 fiddler、mitmproxy等，ssh -D参数 可实现socks5代理。网络嗅探工具可以使用tcpdump 和 wireshark。Charles工具可以实现mock测试（参考接口测试代理工具charles mock测试），如果要自动化实现这些功能，mitmproxy工具是个不错的选择，本文主">
 <meta property="og:type" content="article">
 <meta property="og:title" content="mitmproxy 代理工具介绍：rewrite和map local实现">
-<meta property="og:url" content="https://hiyongz.github.io/posts/api-test-mitmproxy-guide/index.html">
+<meta property="og:url" content="/posts/api-test-mitmproxy-guide/index.html">
 <meta property="og:site_name" content="HiYong">
 <meta property="og:description" content="在接口测试中，会用到抓包工具或者代理工具，常用代理工具包括charles、 burpsuite、 fiddler、mitmproxy等，ssh -D参数 可实现socks5代理。网络嗅探工具可以使用tcpdump 和 wireshark。Charles工具可以实现mock测试（参考接口测试代理工具charles mock测试），如果要自动化实现这些功能，mitmproxy工具是个不错的选择，本文主">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://hiyongz.github.io/posts/api-test-mitmproxy-guide/mitmproxy.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/api-test-mitmproxy-guide/mitmproxy-explicit-https.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/api-test-mitmproxy-guide/mitmproxy-install.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/api-test-mitmproxy-guide/mitmproxy-chrome.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/api-test-mitmproxy-guide/mitmproxy-install2.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/api-test-mitmproxy-guide/mitmproxy-ssl-android.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/api-test-mitmproxy-guide/mitmproxy-ssl-android2.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/api-test-mitmproxy-guide/mitmproxy-ssl-android3.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/api-test-mitmproxy-guide/mitmproxy-playback.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/api-test-mitmproxy-guide/xueqiu-stock.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/api-test-mitmproxy-guide/mitmweb-xueqiu.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/api-test-mitmproxy-guide/charles-xueqiu-response.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/api-test-mitmproxy-guide/mitmproxy-mitmdump.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/api-test-mitmproxy-guide/xueqiu-stock2.png">
-<meta property="og:image" content="https://hiyongz.github.io/posts/api-test-mitmproxy-guide/xueqiu-stock3.png">
+<meta property="og:image" content="/posts/api-test-mitmproxy-guide/mitmproxy.png">
+<meta property="og:image" content="/posts/api-test-mitmproxy-guide/mitmproxy-explicit-https.png">
+<meta property="og:image" content="/posts/api-test-mitmproxy-guide/mitmproxy-install.png">
+<meta property="og:image" content="/posts/api-test-mitmproxy-guide/mitmproxy-chrome.png">
+<meta property="og:image" content="/posts/api-test-mitmproxy-guide/mitmproxy-install2.png">
+<meta property="og:image" content="/posts/api-test-mitmproxy-guide/mitmproxy-ssl-android.png">
+<meta property="og:image" content="/posts/api-test-mitmproxy-guide/mitmproxy-ssl-android2.png">
+<meta property="og:image" content="/posts/api-test-mitmproxy-guide/mitmproxy-ssl-android3.png">
+<meta property="og:image" content="/posts/api-test-mitmproxy-guide/mitmproxy-playback.png">
+<meta property="og:image" content="/posts/api-test-mitmproxy-guide/xueqiu-stock.png">
+<meta property="og:image" content="/posts/api-test-mitmproxy-guide/mitmweb-xueqiu.png">
+<meta property="og:image" content="/posts/api-test-mitmproxy-guide/charles-xueqiu-response.png">
+<meta property="og:image" content="/posts/api-test-mitmproxy-guide/mitmproxy-mitmdump.png">
+<meta property="og:image" content="/posts/api-test-mitmproxy-guide/xueqiu-stock2.png">
+<meta property="og:image" content="/posts/api-test-mitmproxy-guide/xueqiu-stock3.png">
 <meta property="article:published_time" content="2021-02-14T12:02:00.000Z">
 <meta property="article:modified_time" content="2023-08-13T23:43:43.607Z">
 <meta property="article:author" content="HiYo">
@@ -52,9 +52,9 @@
 <meta property="article:tag" content="接口测试">
 <meta property="article:tag" content="代理工具">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://hiyongz.github.io/posts/api-test-mitmproxy-guide/mitmproxy.png">
+<meta name="twitter:image" content="/posts/api-test-mitmproxy-guide/mitmproxy.png">
 
-<link rel="canonical" href="https://hiyongz.github.io/posts/api-test-mitmproxy-guide/">
+<link rel="canonical" href="/posts/api-test-mitmproxy-guide/">
 
 
 <script id="page-configurations">
@@ -228,7 +228,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://hiyongz.github.io/posts/api-test-mitmproxy-guide/">
+    <link itemprop="mainEntityOfPage" href="/posts/api-test-mitmproxy-guide/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/logo_android-chrome-192x192-wechat.png">
@@ -427,8 +427,8 @@
 
   <p><span>本文标题:</span>mitmproxy 代理工具介绍：rewrite和map local实现</a></p>
   <p><span>文章作者:</span>hiyo</a></p>
-  <p><span>文章链接:</span><a href="/posts/api-test-mitmproxy-guide/" title="mitmproxy 代理工具介绍：rewrite和map local实现">https://hiyongz.github.io/posts/api-test-mitmproxy-guide/</a>
-    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://hiyongz.github.io/posts/api-test-mitmproxy-guide/"  aria-label="复制成功！"></i></span>
+  <p><span>文章链接:</span><a href="/posts/api-test-mitmproxy-guide/" title="mitmproxy 代理工具介绍：rewrite和map local实现">/posts/api-test-mitmproxy-guide/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="/posts/api-test-mitmproxy-guide/"  aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span>本博客文章除特别声明外，均采用<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-ND 4.0</a> 许可协议。转载请保留原文链接及作者。</p>  
 </div>
